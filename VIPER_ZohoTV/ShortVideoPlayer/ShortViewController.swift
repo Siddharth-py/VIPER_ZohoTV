@@ -18,7 +18,7 @@ class ShortVideoViewController: UIViewController, ShortsViewControllerProtocol {
         super.viewDidLoad()
         view.backgroundColor = .black
         setupMainScrollView()
-        presenter?.viewDidLoad()
+        presenter?.getshots()
         
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)

@@ -8,17 +8,11 @@
 import Foundation
 
 class ShortsPresenter: ShortsPresenterProtocol {
-    var view: (any ShortsViewControllerProtocol)!
-    
-    var interactor: (any ShortsInteractorProtocol)!
-    
-    var router: (any ShortsRouterProtocol)!
-//    
-//    weak var view: ShortsViewProtocol?
-//    var interactor: ShortsInteractorProtocol?
-//    var router: ShortsRouterProtocol?
+    weak var view: ShortsViewControllerProtocol?
+    var interactor: ShortsInteractorProtocol?
+    var router: ShortsRouterProtocol?
 
-    func viewDidLoad() {
+    func getshots() {
         interactor?.fetchVideoCategories()
     }
 }

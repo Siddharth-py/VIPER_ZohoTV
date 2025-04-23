@@ -25,10 +25,10 @@ protocol ShortsRouterProtocol: AnyObject {
 }
 
 protocol ShortsPresenterProtocol: AnyObject {
-    var view: ShortsViewControllerProtocol! { get set }
-    var interactor: ShortsInteractorProtocol! { get set }
-    var router: ShortsRouterProtocol! { get set }
+    var view: ShortsViewControllerProtocol? { get set }
+    var interactor: ShortsInteractorProtocol? { get set }
+    var router: ShortsRouterProtocol? { get set }
     
-    func viewDidLoad()
+    func getshots()
 }
 
