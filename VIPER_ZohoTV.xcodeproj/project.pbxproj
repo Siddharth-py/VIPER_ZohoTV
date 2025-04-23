@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D22396522DB813A300E1C18F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396482DB813A300E1C18F /* AppDelegate.swift */; };
+		D22396532DB813A300E1C18F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223964F2DB813A300E1C18F /* SceneDelegate.swift */; };
+		D22396542DB813A300E1C18F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396502DB813A300E1C18F /* ViewController.swift */; };
+		D22396552DB813A300E1C18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22396492DB813A300E1C18F /* Assets.xcassets */; };
+		D22396572DB813A300E1C18F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D223964C2DB813A300E1C18F /* LaunchScreen.storyboard */; };
+		D223965B2DB817CF00E1C18F /* MainTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223965A2DB817C500E1C18F /* MainTabBarRouter.swift */; };
+		D223965D2DB817DB00E1C18F /* MainTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223965C2DB817D800E1C18F /* MainTabBarPresenter.swift */; };
+		D223965F2DB817E600E1C18F /* MainTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223965E2DB817E400E1C18F /* MainTabBarInteractor.swift */; };
+		D22396612DB817F200E1C18F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396602DB817F000E1C18F /* MainTabBarViewController.swift */; };
+		D22396632DB817FE00E1C18F /* MainTabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396622DB817FD00E1C18F /* MainTabBarProtocols.swift */; };
+		D22396662DB8C4C900E1C18F /* VideoCategoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396652DB8C4C500E1C18F /* VideoCategoryProtocols.swift */; };
+		D22396692DB8C50C00E1C18F /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396682DB8C50600E1C18F /* Video.swift */; };
+		D223966B2DB8C54500E1C18F /* VideoCategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223966A2DB8C54200E1C18F /* VideoCategoryRouter.swift */; };
+		D223966D2DB8C56B00E1C18F /* VideoCategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223966C2DB8C56900E1C18F /* VideoCategoryPresenter.swift */; };
+		D223966F2DB8C5BC00E1C18F /* VideoCategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223966E2DB8C5B900E1C18F /* VideoCategoryInteractor.swift */; };
+		D22396712DB8C61700E1C18F /* ThumbnailConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396702DB8C60900E1C18F /* ThumbnailConstants.swift */; };
+		D22396732DB8C66900E1C18F /* VideoCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396722DB8C65D00E1C18F /* VideoCategoryViewController.swift */; };
+		D22396752DB8C9B500E1C18F /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396742DB8C9A400E1C18F /* VideoCollectionViewCell.swift */; };
+		D22396772DB8C9FC00E1C18F /* CategoryHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396762DB8C9FA00E1C18F /* CategoryHeaderReusableView.swift */; };
+		D223967A2DB8CCD900E1C18F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396792DB8CCCF00E1C18F /* SearchViewController.swift */; };
+		D223967C2DB8CD9900E1C18F /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223967B2DB8CD9200E1C18F /* SearchPresenter.swift */; };
+		D223967E2DB8CDA600E1C18F /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223967D2DB8CDA400E1C18F /* SearchInteractor.swift */; };
+		D22396802DB8CDB200E1C18F /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223967F2DB8CDB100E1C18F /* SearchRouter.swift */; };
+		D22396822DB8CE2E00E1C18F /* SearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396812DB8CE1400E1C18F /* SearchProtocol.swift */; };
+		D22396842DB8CEAC00E1C18F /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396832DB8CE9D00E1C18F /* SearchCollectionViewCell.swift */; };
+		D22396882DB936CD00E1C18F /* ShortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396872DB936B500E1C18F /* ShortViewController.swift */; };
+		D223968A2DB936E100E1C18F /* ShortPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22396892DB936D300E1C18F /* ShortPresenter.swift */; };
+		D223968C2DB9371600E1C18F /* ShortInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223968B2DB936F900E1C18F /* ShortInteractor.swift */; };
+		D223968E2DB9372400E1C18F /* ShortRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223968D2DB9371E00E1C18F /* ShortRouter.swift */; };
+		D22396902DB9373800E1C18F /* ShortProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D223968F2DB9372900E1C18F /* ShortProtocols.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D223962B2DB8139100E1C18F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D223960C2DB8138F00E1C18F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D22396132DB8138F00E1C18F;
+			remoteInfo = VIPER_ZohoTV;
+		};
+		D22396352DB8139100E1C18F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D223960C2DB8138F00E1C18F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D22396132DB8138F00E1C18F;
+			remoteInfo = VIPER_ZohoTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D22396142DB8138F00E1C18F /* VIPER_ZohoTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER_ZohoTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D223962A2DB8139100E1C18F /* VIPER_ZohoTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPER_ZohoTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22396342DB8139100E1C18F /* VIPER_ZohoTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPER_ZohoTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22396482DB813A300E1C18F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D22396492DB813A300E1C18F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D223964A2DB813A300E1C18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D223964B2DB813A300E1C18F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D223964F2DB813A300E1C18F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D22396502DB813A300E1C18F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D223965A2DB817C500E1C18F /* MainTabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarRouter.swift; sourceTree = "<group>"; };
+		D223965C2DB817D800E1C18F /* MainTabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenter.swift; sourceTree = "<group>"; };
+		D223965E2DB817E400E1C18F /* MainTabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractor.swift; sourceTree = "<group>"; };
+		D22396602DB817F000E1C18F /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		D22396622DB817FD00E1C18F /* MainTabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarProtocols.swift; sourceTree = "<group>"; };
+		D22396652DB8C4C500E1C18F /* VideoCategoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCategoryProtocols.swift; sourceTree = "<group>"; };
+		D22396682DB8C50600E1C18F /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		D223966A2DB8C54200E1C18F /* VideoCategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCategoryRouter.swift; sourceTree = "<group>"; };
+		D223966C2DB8C56900E1C18F /* VideoCategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCategoryPresenter.swift; sourceTree = "<group>"; };
+		D223966E2DB8C5B900E1C18F /* VideoCategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCategoryInteractor.swift; sourceTree = "<group>"; };
+		D22396702DB8C60900E1C18F /* ThumbnailConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailConstants.swift; sourceTree = "<group>"; };
+		D22396722DB8C65D00E1C18F /* VideoCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCategoryViewController.swift; sourceTree = "<group>"; };
+		D22396742DB8C9A400E1C18F /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D22396762DB8C9FA00E1C18F /* CategoryHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderReusableView.swift; sourceTree = "<group>"; };
+		D22396792DB8CCCF00E1C18F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D223967B2DB8CD9200E1C18F /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		D223967D2DB8CDA400E1C18F /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		D223967F2DB8CDB100E1C18F /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		D22396812DB8CE1400E1C18F /* SearchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocol.swift; sourceTree = "<group>"; };
+		D22396832DB8CE9D00E1C18F /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		D22396872DB936B500E1C18F /* ShortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortViewController.swift; sourceTree = "<group>"; };
+		D22396892DB936D300E1C18F /* ShortPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortPresenter.swift; sourceTree = "<group>"; };
+		D223968B2DB936F900E1C18F /* ShortInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortInteractor.swift; sourceTree = "<group>"; };
+		D223968D2DB9371E00E1C18F /* ShortRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortRouter.swift; sourceTree = "<group>"; };
+		D223968F2DB9372900E1C18F /* ShortProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortProtocols.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D223962D2DB8139100E1C18F /* VIPER_ZohoTVTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VIPER_ZohoTVTests;
+			sourceTree = "<group>";
+		};
+		D22396372DB8139100E1C18F /* VIPER_ZohoTVUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VIPER_ZohoTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D22396112DB8138F00E1C18F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D22396272DB8139100E1C18F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D22396312DB8139100E1C18F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D223960B2DB8138F00E1C18F = {
+			isa = PBXGroup;
+			children = (
+				D22396512DB813A300E1C18F /* VIPER_ZohoTV */,
+				D223962D2DB8139100E1C18F /* VIPER_ZohoTVTests */,
+				D22396372DB8139100E1C18F /* VIPER_ZohoTVUITests */,
+				D22396152DB8138F00E1C18F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D22396152DB8138F00E1C18F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D22396142DB8138F00E1C18F /* VIPER_ZohoTV.app */,
+				D223962A2DB8139100E1C18F /* VIPER_ZohoTVTests.xctest */,
+				D22396342DB8139100E1C18F /* VIPER_ZohoTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D22396512DB813A300E1C18F /* VIPER_ZohoTV */ = {
+			isa = PBXGroup;
+			children = (
+				D22396852DB8D90200E1C18F /* SupportCells */,
+				D22396672DB8C4ED00E1C18F /* Modal */,
+				D22396642DB8C4A100E1C18F /* VideoCategory */,
+				D22396782DB8CCBF00E1C18F /* Search */,
+				D22396862DB9368A00E1C18F /* ShortVideoPlayer */,
+				D22396592DB817B300E1C18F /* MainTabBar */,
+				D22396482DB813A300E1C18F /* AppDelegate.swift */,
+				D22396492DB813A300E1C18F /* Assets.xcassets */,
+				D223964A2DB813A300E1C18F /* Info.plist */,
+				D223964C2DB813A300E1C18F /* LaunchScreen.storyboard */,
+				D223964F2DB813A300E1C18F /* SceneDelegate.swift */,
+				D22396502DB813A300E1C18F /* ViewController.swift */,
+			);
+			path = VIPER_ZohoTV;
+			sourceTree = "<group>";
+		};
+		D22396592DB817B300E1C18F /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D22396622DB817FD00E1C18F /* MainTabBarProtocols.swift */,
+				D223965A2DB817C500E1C18F /* MainTabBarRouter.swift */,
+				D223965C2DB817D800E1C18F /* MainTabBarPresenter.swift */,
+				D223965E2DB817E400E1C18F /* MainTabBarInteractor.swift */,
+				D22396602DB817F000E1C18F /* MainTabBarViewController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		D22396642DB8C4A100E1C18F /* VideoCategory */ = {
+			isa = PBXGroup;
+			children = (
+				D22396652DB8C4C500E1C18F /* VideoCategoryProtocols.swift */,
+				D223966A2DB8C54200E1C18F /* VideoCategoryRouter.swift */,
+				D223966C2DB8C56900E1C18F /* VideoCategoryPresenter.swift */,
+				D223966E2DB8C5B900E1C18F /* VideoCategoryInteractor.swift */,
+				D22396722DB8C65D00E1C18F /* VideoCategoryViewController.swift */,
+			);
+			path = VideoCategory;
+			sourceTree = "<group>";
+		};
+		D22396672DB8C4ED00E1C18F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				D22396682DB8C50600E1C18F /* Video.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		D22396782DB8CCBF00E1C18F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D22396812DB8CE1400E1C18F /* SearchProtocol.swift */,
+				D223967F2DB8CDB100E1C18F /* SearchRouter.swift */,
+				D223967B2DB8CD9200E1C18F /* SearchPresenter.swift */,
+				D223967D2DB8CDA400E1C18F /* SearchInteractor.swift */,
+				D22396792DB8CCCF00E1C18F /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D22396852DB8D90200E1C18F /* SupportCells */ = {
+			isa = PBXGroup;
+			children = (
+				D22396832DB8CE9D00E1C18F /* SearchCollectionViewCell.swift */,
+				D22396762DB8C9FA00E1C18F /* CategoryHeaderReusableView.swift */,
+				D22396742DB8C9A400E1C18F /* VideoCollectionViewCell.swift */,
+				D22396702DB8C60900E1C18F /* ThumbnailConstants.swift */,
+			);
+			path = SupportCells;
+			sourceTree = "<group>";
+		};
+		D22396862DB9368A00E1C18F /* ShortVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D223968F2DB9372900E1C18F /* ShortProtocols.swift */,
+				D223968D2DB9371E00E1C18F /* ShortRouter.swift */,
+				D22396892DB936D300E1C18F /* ShortPresenter.swift */,
+				D223968B2DB936F900E1C18F /* ShortInteractor.swift */,
+				D22396872DB936B500E1C18F /* ShortViewController.swift */,
+			);
+			path = ShortVideoPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D22396132DB8138F00E1C18F /* VIPER_ZohoTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D223963D2DB8139100E1C18F /* Build configuration list for PBXNativeTarget "VIPER_ZohoTV" */;
+			buildPhases = (
+				D22396102DB8138F00E1C18F /* Sources */,
+				D22396112DB8138F00E1C18F /* Frameworks */,
+				D22396122DB8138F00E1C18F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIPER_ZohoTV;
+			packageProductDependencies = (
+			);
+			productName = VIPER_ZohoTV;
+			productReference = D22396142DB8138F00E1C18F /* VIPER_ZohoTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D22396292DB8139100E1C18F /* VIPER_ZohoTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D22396422DB8139100E1C18F /* Build configuration list for PBXNativeTarget "VIPER_ZohoTVTests" */;
+			buildPhases = (
+				D22396262DB8139100E1C18F /* Sources */,
+				D22396272DB8139100E1C18F /* Frameworks */,
+				D22396282DB8139100E1C18F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D223962C2DB8139100E1C18F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D223962D2DB8139100E1C18F /* VIPER_ZohoTVTests */,
+			);
+			name = VIPER_ZohoTVTests;
+			packageProductDependencies = (
+			);
+			productName = VIPER_ZohoTVTests;
+			productReference = D223962A2DB8139100E1C18F /* VIPER_ZohoTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D22396332DB8139100E1C18F /* VIPER_ZohoTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D22396452DB8139100E1C18F /* Build configuration list for PBXNativeTarget "VIPER_ZohoTVUITests" */;
+			buildPhases = (
+				D22396302DB8139100E1C18F /* Sources */,
+				D22396312DB8139100E1C18F /* Frameworks */,
+				D22396322DB8139100E1C18F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D22396362DB8139100E1C18F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D22396372DB8139100E1C18F /* VIPER_ZohoTVUITests */,
+			);
+			name = VIPER_ZohoTVUITests;
+			packageProductDependencies = (
+			);
+			productName = VIPER_ZohoTVUITests;
+			productReference = D22396342DB8139100E1C18F /* VIPER_ZohoTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D223960C2DB8138F00E1C18F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D22396132DB8138F00E1C18F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D22396292DB8139100E1C18F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D22396132DB8138F00E1C18F;
+					};
+					D22396332DB8139100E1C18F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D22396132DB8138F00E1C18F;
+					};
+				};
+			};
+			buildConfigurationList = D223960F2DB8138F00E1C18F /* Build configuration list for PBXProject "VIPER_ZohoTV" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D223960B2DB8138F00E1C18F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D22396152DB8138F00E1C18F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D22396132DB8138F00E1C18F /* VIPER_ZohoTV */,
+				D22396292DB8139100E1C18F /* VIPER_ZohoTVTests */,
+				D22396332DB8139100E1C18F /* VIPER_ZohoTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D22396122DB8138F00E1C18F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22396552DB813A300E1C18F /* Assets.xcassets in Resources */,
+				D22396572DB813A300E1C18F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D22396282DB8139100E1C18F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D22396322DB8139100E1C18F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D22396102DB8138F00E1C18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22396902DB9373800E1C18F /* ShortProtocols.swift in Sources */,
+				D22396732DB8C66900E1C18F /* VideoCategoryViewController.swift in Sources */,
+				D22396712DB8C61700E1C18F /* ThumbnailConstants.swift in Sources */,
+				D223967A2DB8CCD900E1C18F /* SearchViewController.swift in Sources */,
+				D22396882DB936CD00E1C18F /* ShortViewController.swift in Sources */,
+				D22396802DB8CDB200E1C18F /* SearchRouter.swift in Sources */,
+				D223966F2DB8C5BC00E1C18F /* VideoCategoryInteractor.swift in Sources */,
+				D223966D2DB8C56B00E1C18F /* VideoCategoryPresenter.swift in Sources */,
+				D223967C2DB8CD9900E1C18F /* SearchPresenter.swift in Sources */,
+				D22396522DB813A300E1C18F /* AppDelegate.swift in Sources */,
+				D22396532DB813A300E1C18F /* SceneDelegate.swift in Sources */,
+				D22396752DB8C9B500E1C18F /* VideoCollectionViewCell.swift in Sources */,
+				D22396842DB8CEAC00E1C18F /* SearchCollectionViewCell.swift in Sources */,
+				D22396632DB817FE00E1C18F /* MainTabBarProtocols.swift in Sources */,
+				D223968C2DB9371600E1C18F /* ShortInteractor.swift in Sources */,
+				D223968A2DB936E100E1C18F /* ShortPresenter.swift in Sources */,
+				D223965D2DB817DB00E1C18F /* MainTabBarPresenter.swift in Sources */,
+				D223968E2DB9372400E1C18F /* ShortRouter.swift in Sources */,
+				D22396612DB817F200E1C18F /* MainTabBarViewController.swift in Sources */,
+				D22396542DB813A300E1C18F /* ViewController.swift in Sources */,
+				D223966B2DB8C54500E1C18F /* VideoCategoryRouter.swift in Sources */,
+				D22396822DB8CE2E00E1C18F /* SearchProtocol.swift in Sources */,
+				D223967E2DB8CDA600E1C18F /* SearchInteractor.swift in Sources */,
+				D22396662DB8C4C900E1C18F /* VideoCategoryProtocols.swift in Sources */,
+				D223965B2DB817CF00E1C18F /* MainTabBarRouter.swift in Sources */,
+				D22396772DB8C9FC00E1C18F /* CategoryHeaderReusableView.swift in Sources */,
+				D223965F2DB817E600E1C18F /* MainTabBarInteractor.swift in Sources */,
+				D22396692DB8C50C00E1C18F /* Video.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D22396262DB8139100E1C18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D22396302DB8139100E1C18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D223962C2DB8139100E1C18F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D22396132DB8138F00E1C18F /* VIPER_ZohoTV */;
+			targetProxy = D223962B2DB8139100E1C18F /* PBXContainerItemProxy */;
+		};
+		D22396362DB8139100E1C18F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D22396132DB8138F00E1C18F /* VIPER_ZohoTV */;
+			targetProxy = D22396352DB8139100E1C18F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D223964C2DB813A300E1C18F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D223964B2DB813A300E1C18F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D223963E2DB8139100E1C18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VIPER_ZohoTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zohoschools.VIPER-ZohoTV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D223963F2DB8139100E1C18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VIPER_ZohoTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zohoschools.VIPER-ZohoTV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D22396402DB8139100E1C18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D22396412DB8139100E1C18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D22396432DB8139100E1C18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zohoschools.VIPER-ZohoTVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER_ZohoTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VIPER_ZohoTV";
+			};
+			name = Debug;
+		};
+		D22396442DB8139100E1C18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zohoschools.VIPER-ZohoTVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER_ZohoTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VIPER_ZohoTV";
+			};
+			name = Release;
+		};
+		D22396462DB8139100E1C18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zohoschools.VIPER-ZohoTVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VIPER_ZohoTV;
+			};
+			name = Debug;
+		};
+		D22396472DB8139100E1C18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zohoschools.VIPER-ZohoTVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VIPER_ZohoTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D223960F2DB8138F00E1C18F /* Build configuration list for PBXProject "VIPER_ZohoTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D22396402DB8139100E1C18F /* Debug */,
+				D22396412DB8139100E1C18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D223963D2DB8139100E1C18F /* Build configuration list for PBXNativeTarget "VIPER_ZohoTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D223963E2DB8139100E1C18F /* Debug */,
+				D223963F2DB8139100E1C18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D22396422DB8139100E1C18F /* Build configuration list for PBXNativeTarget "VIPER_ZohoTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D22396432DB8139100E1C18F /* Debug */,
+				D22396442DB8139100E1C18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D22396452DB8139100E1C18F /* Build configuration list for PBXNativeTarget "VIPER_ZohoTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D22396462DB8139100E1C18F /* Debug */,
+				D22396472DB8139100E1C18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D223960C2DB8138F00E1C18F /* Project object */;
+}
