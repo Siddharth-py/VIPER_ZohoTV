@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "3B457CFE-A028-4FAB-96C5-DE91B39A6768",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:VIPER_ZohoTV.xcodeproj",
+        "identifier" : "D22396332DB8139100E1C18F",
+        "name" : "VIPER_ZohoTVUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:VIPER_ZohoTV.xcodeproj",
+        "identifier" : "D22396292DB8139100E1C18F",
+        "name" : "VIPER_ZohoTVTests"
+      }
+    }
+  ],
+  "version" : 1
+}
